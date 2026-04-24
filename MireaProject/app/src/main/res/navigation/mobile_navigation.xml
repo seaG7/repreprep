@@ -22,4 +22,9 @@
         android:name="com.mirea.Samsonova.mireaproject.ui.webview.WebViewFragment"
         android:label="@string/menu_webview"
         tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/nav_worker"
+        android:name="com.mirea.Samsonova.mireaproject.ui.worker.WorkerFragment"
+        android:label="Background Task"
+        tools:layout="@layout/fragment_worker" />
 </navigation>
