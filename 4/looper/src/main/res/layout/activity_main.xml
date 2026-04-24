@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <EditText android:id="@+id/editAge" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Ваш возраст" android:inputType="number" />
+    <EditText android:id="@+id/editWork" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Ваша работа" />
+    <Button android:id="@+id/buttonMirea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Отправить в поток" />
+</LinearLayout>

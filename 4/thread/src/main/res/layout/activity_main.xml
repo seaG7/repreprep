@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText android:id="@+id/editPairs" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Общее кол-во пар" />
+    <EditText android:id="@+id/editDays" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Кол-во учебных дней" />
+    <Button android:id="@+id/buttonCalc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Посчитать среднее" />
+    <TextView android:id="@+id/textResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18sp" />
+</LinearLayout>
