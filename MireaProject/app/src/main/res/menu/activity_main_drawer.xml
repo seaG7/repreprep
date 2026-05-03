@@ -17,10 +17,26 @@
             android:id="@+id/nav_webview"
             android:icon="@android:drawable/ic_menu_search"
             android:title="@string/menu_webview" />
+
         <item
             android:id="@+id/nav_worker"
             android:icon="@android:drawable/ic_menu_manage"
             android:title="Фоновая задача" />
+
+        <item
+            android:id="@+id/nav_sensor"
+            android:icon="@android:drawable/ic_menu_compass"
+            android:title="@string/menu_sensor" />
+
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@android:drawable/ic_menu_camera"
+            android:title="@string/menu_camera" />
+
+        <item
+            android:id="@+id/nav_audio"
+            android:icon="@android:drawable/ic_btn_speak_now"
+            android:title="@string/menu_audio" />
 
     </group>
 </menu>

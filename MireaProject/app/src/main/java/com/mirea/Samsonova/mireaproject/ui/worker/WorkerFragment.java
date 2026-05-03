@@ -10,7 +10,6 @@ import androidx.fragment.app.Fragment;
 import androidx.work.OneTimeWorkRequest;
 import androidx.work.WorkManager;
 
-import com.mirea.Samsonova.mireaproject.MyWorker;
 import com.mirea.Samsonova.mireaproject.databinding.FragmentWorkerBinding;
 
 public class WorkerFragment extends Fragment {

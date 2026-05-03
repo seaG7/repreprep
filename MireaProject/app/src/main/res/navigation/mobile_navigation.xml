@@ -22,9 +22,29 @@
         android:name="com.mirea.Samsonova.mireaproject.ui.webview.WebViewFragment"
         android:label="@string/menu_webview"
         tools:layout="@layout/fragment_web_view" />
+
     <fragment
         android:id="@+id/nav_worker"
         android:name="com.mirea.Samsonova.mireaproject.ui.worker.WorkerFragment"
         android:label="Background Task"
         tools:layout="@layout/fragment_worker" />
+
+    <fragment
+        android:id="@+id/nav_sensor"
+        android:name="com.mirea.Samsonova.mireaproject.ui.sensor.SensorFragment"
+        android:label="@string/menu_sensor"
+        tools:layout="@layout/fragment_sensor" />
+
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="com.mirea.Samsonova.mireaproject.ui.camera.CameraFragment"
+        android:label="@string/menu_camera"
+        tools:layout="@layout/fragment_camera" />
+
+    <fragment
+        android:id="@+id/nav_audio"
+        android:name="com.mirea.Samsonova.mireaproject.ui.audio.AudioFragment"
+        android:label="@string/menu_audio"
+        tools:layout="@layout/fragment_audio" />
+
 </navigation>

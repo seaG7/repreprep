@@ -1,4 +1,4 @@
-package com.mirea.Samsonova.mireaproject;
+package com.mirea.Samsonova.mireaproject.ui.worker;
 
 import android.content.Context;
 import android.util.Log;

@@ -5,6 +5,7 @@
     <string name="menu_webview">WebView</string>
     <string name="navigation_drawer_open">Открыть навигационное меню</string>
     <string name="navigation_drawer_close">Закрыть навигационное меню</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_sensor">Компас (Датчик)</string>
+    <string name="menu_camera">Аватар (Камера)</string>
+    <string name="menu_audio">Аудиозаметка</string>
 </resources>
