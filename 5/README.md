@@ -31,7 +31,7 @@
 Для отображения данных на экране (названия датчика и его максимального диапазона) использовался компонент `ListView` и стандартный адаптер `SimpleAdapter`, связывающий данные из `ArrayList<HashMap>` с разметкой `simple_list_item_2`.
 
 **Рисунок 1: Главный экран приложения со списком доступных датчиков.**
-![alt text](image_2026-05-03_05-07-47.png)
+![alt text](report-images/image_2026-05-03_05-07-47.png)
 
 **Листинг** `MainActivity.java`:
 
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
 Регистрация слушателя датчика происходит в методе жизненного цикла `onResume()`, а отписка (для экономии заряда батареи) — в методе `onPause()`. В методе `onSensorChanged` извлекается массив `event.values`, содержащий ускорение по осям X (боковое), Y (продольное) и Z (вертикальное), после чего значения выводятся в `TextView`.
 
 **Рисунок 2: Отображение значений акселерометра в реальном времени (с использованием эмулятора).**
-![alt text](image_2026-05-03_03-57-22.png)
+![alt text](report-images/image_2026-05-03_03-57-22.png)
 
 **Листинг** `MainActivity.java`:
 
@@ -247,9 +247,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 Перед открытием камеры выполняется запрос разрешения `Manifest.permission.CAMERA` во время выполнения (Runtime Permission). Был создан метод `createImageFile()`, генерирующий уникальное имя файла на основе текущего времени. Для обработки результата (получения фото) использовался современный подход `ActivityResultLauncher`.
 
 **Рисунок 3: Окно камеры.**
-![alt text](image_2026-05-03_05-12-48.png)
+![alt text](report-images/image_2026-05-03_05-12-48.png)
 **Рисунок 4: Отображение сделанной фотографии.**
-![alt text](image_2026-05-03_05-13-53.png)
+![alt text](report-images/image_2026-05-03_05-13-53.png)
 
 **Листинг** `AndroidManifest.xml` (модуль Camera):
 
@@ -438,9 +438,9 @@ public class MainActivity extends AppCompatActivity {
 Реализована логика, предотвращающая одновременную запись и воспроизведение путем блокировки соответствующих кнопок. Перед началом записи запрашивается разрешение `RECORD_AUDIO`. Аудиофайл сохраняется во внешнее хранилище приложения в формате `3GPP` с кодеком `AMR_NB`.
 
 **Рисунок 5: Процесс записи аудио (кнопка Play заблокирована).**
-![alt text](image_2026-05-03_05-20-27.png)
+![alt text](report-images/image_2026-05-03_05-20-27.png)
 **Рисунок 6: Процесс воспроизведения аудио (кнопка Record заблокирована).**
-![alt text](image_2026-05-03_05-20-40.png)
+![alt text](report-images/image_2026-05-03_05-20-40.png)
 
 **Листинг** `AndroidManifest.xml` (модуль AudioRecord):
 
@@ -913,7 +913,7 @@ public class MainActivity extends AppCompatActivity {
 Был разработан фрагмент `SensorFragment`. Путем одновременного получения данных с `TYPE_ACCELEROMETER` и `TYPE_MAGNETIC_FIELD`, с помощью методов `SensorManager.getRotationMatrix` и `getOrientation` был вычислен азимут устройства. На основе азимута реализована логическая задача — определение стороны света и вывод соответствующей полезной информации (например, с какой стороны растет мох).
 
 **Рисунок 7: Экран Компаса во время работы.**
-![alt text](image_2026-05-03_17-33-17.png)
+![alt text](report-images/image_2026-05-03_17-33-17.png)
 
 **Листинг** `SensorFragment.java`:
 
@@ -1039,7 +1039,7 @@ public class SensorFragment extends Fragment implements SensorEventListener {
 Разработан `CameraFragment`, представляющий собой экран профиля пользователя. При нажатии на кнопку приложение запрашивает разрешение на камеру, формирует `Uri` через `FileProvider` и открывает камеру. Результат сохраняется и выводится в `ImageView`.
 
 **Рисунок 8: Экран профиля с установленным фото.**
-![alt text](image_2026-05-03_17-34-12.png)
+![alt text](report-images/image_2026-05-03_17-34-12.png)
 
 **Листинг** `CameraFragment.java`:
 
@@ -1174,7 +1174,7 @@ public class CameraFragment extends Fragment {
 Разработан `AudioFragment`. Реализован интерфейс создания голосовых заметок. Запрос разрешения на использование микрофона вызывается строго при попытке начать запись. Во время проигрывания заметки интерфейс динамически реагирует на завершение аудиофайла через `setOnCompletionListener`.
 
 **Рисунок 9: Экран создания аудиозаметки.**
-![alt text](image_2026-05-03_17-34-34.png)
+![alt text](report-images/image_2026-05-03_17-34-34.png)
 
 **Листинг** `AudioFragment.java`:
 
