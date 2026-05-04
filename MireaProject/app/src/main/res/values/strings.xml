@@ -8,4 +8,8 @@
     <string name="menu_sensor">Компас (Датчик)</string>
     <string name="menu_camera">Аватар (Камера)</string>
     <string name="menu_audio">Аудиозаметка</string>
+    <string name="menu_profile">Профиль</string>
+    <string name="menu_files">Работа с файлами (Криптография)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

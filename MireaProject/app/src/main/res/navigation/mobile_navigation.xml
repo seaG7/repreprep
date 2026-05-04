@@ -47,4 +47,16 @@
         android:label="@string/menu_audio"
         tools:layout="@layout/fragment_audio" />
 
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.mirea.Samsonova.mireaproject.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_files"
+        android:name="com.mirea.Samsonova.mireaproject.ui.files.FilesFragment"
+        android:label="@string/menu_files"
+        tools:layout="@layout/fragment_files" />
+
 </navigation>

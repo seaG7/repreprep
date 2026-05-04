@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editFileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя файла (например: quote.txt)" />
+
+    <EditText
+        android:id="@+id/editQuote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Цитата"
+        android:lines="4"
+        android:gravity="top"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnSaveExt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить данные в файл"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnLoadExt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Загрузить данные из файла"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
