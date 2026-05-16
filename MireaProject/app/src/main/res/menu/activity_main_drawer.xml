@@ -24,6 +24,11 @@
             android:title="@string/menu_network" />
 
         <item
+            android:id="@+id/nav_places"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="@string/menu_places" />
+
+        <item
             android:id="@+id/nav_worker"
             android:icon="@android:drawable/ic_menu_manage"
             android:title="@string/menu_worker" />

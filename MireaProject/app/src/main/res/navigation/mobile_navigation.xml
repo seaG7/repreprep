@@ -30,6 +30,12 @@
         tools:layout="@layout/fragment_network" />
 
     <fragment
+        android:id="@+id/nav_places"
+        android:name="com.mirea.Samsonova.mireaproject.ui.places.PlacesFragment"
+        android:label="@string/menu_places"
+        tools:layout="@layout/fragment_places" />
+
+    <fragment
         android:id="@+id/nav_worker"
         android:name="com.mirea.Samsonova.mireaproject.ui.worker.WorkerFragment"
         android:label="@string/menu_worker"

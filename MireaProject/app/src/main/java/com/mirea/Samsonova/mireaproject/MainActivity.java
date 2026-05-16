@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_data,
                 R.id.nav_webview,
                 R.id.nav_network,
+                R.id.nav_places,
                 R.id.nav_worker,
                 R.id.nav_sensor,
                 R.id.nav_camera,

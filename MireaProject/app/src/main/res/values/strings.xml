@@ -5,6 +5,7 @@
     <string name="menu_data">Отрасль</string>
     <string name="menu_webview">WebView</string>
     <string name="menu_network">Сетевой ресурс</string>
+    <string name="menu_places">Заведения</string>
     <string name="menu_worker">Фоновая задача</string>
     <string name="menu_sensor">Компас (Датчик)</string>
     <string name="menu_camera">Аватар (Камера)</string>
@@ -46,4 +47,10 @@
     <string name="network_status_loading">Загружаем данные...</string>
     <string name="network_status_success">Данные успешно загружены</string>
     <string name="network_status_error">Ошибка загрузки данных</string>
+
+    <string name="places_title">Заведения</string>
+    <string name="places_description">Выберите заведение из списка или нажмите на маркер на карте. При выборе строится радиус 500 м.</string>
+    <string name="places_status_loading">Загрузка карты...</string>
+    <string name="places_button_show_all">Показать все</string>
+    <string name="places_button_my_location">Моё местоположение</string>
 </resources>
