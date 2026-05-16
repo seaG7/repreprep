@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="HttpURLConnection"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/loadButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Получить IP и погоду" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Статус: ожидание"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ipBlockTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Информация об IP"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ipTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="IP: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cityTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Город: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/regionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Регион: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/countryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Страна: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Координаты: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/orgTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Организация: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/timezoneTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Часовой пояс: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/weatherBlockTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Погода"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/weatherStatusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Погода: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/temperatureTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Температура: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/windSpeedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Скорость ветра: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/windDirectionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Направление ветра: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/weatherCodeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Код погоды: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/weatherTimeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Время прогноза: -"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textViewNetworkTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/network_title"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewNetworkDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/network_description"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonLoadNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/network_button_load" />
+
+        <TextView
+            android:id="@+id/textViewNetworkStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/network_status_waiting"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Город: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewCoordinates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Координаты: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Температура: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewWindSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Скорость ветра: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewWindDirection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Направление ветра: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewWeatherCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Код погоды: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewWeatherTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Время прогноза: -"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewRawNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</ScrollView>

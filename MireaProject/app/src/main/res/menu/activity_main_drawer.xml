@@ -19,9 +19,14 @@
             android:title="@string/menu_webview" />
 
         <item
+            android:id="@+id/nav_network"
+            android:icon="@android:drawable/ic_menu_upload"
+            android:title="@string/menu_network" />
+
+        <item
             android:id="@+id/nav_worker"
             android:icon="@android:drawable/ic_menu_manage"
-            android:title="Фоновая задача" />
+            android:title="@string/menu_worker" />
 
         <item
             android:id="@+id/nav_sensor"
@@ -49,4 +54,5 @@
             android:title="@string/menu_files" />
 
     </group>
+
 </menu>

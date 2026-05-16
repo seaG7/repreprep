@@ -1,15 +1,49 @@
 <resources>
     <string name="app_name">MireaProject</string>
+
     <string name="menu_home">Главная</string>
     <string name="menu_data">Отрасль</string>
     <string name="menu_webview">WebView</string>
-    <string name="navigation_drawer_open">Открыть навигационное меню</string>
-    <string name="navigation_drawer_close">Закрыть навигационное меню</string>
+    <string name="menu_network">Сетевой ресурс</string>
+    <string name="menu_worker">Фоновая задача</string>
     <string name="menu_sensor">Компас (Датчик)</string>
     <string name="menu_camera">Аватар (Камера)</string>
     <string name="menu_audio">Аудиозаметка</string>
     <string name="menu_profile">Профиль</string>
     <string name="menu_files">Работа с файлами (Криптография)</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="navigation_drawer_open">Открыть навигационное меню</string>
+    <string name="navigation_drawer_close">Закрыть навигационное меню</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="login_title">MireaProject</string>
+    <string name="login_subtitle">Вход в приложение через Firebase</string>
+    <string name="login_status_waiting">Введите email и пароль</string>
+    <string name="login_status_signing_in">Выполняется вход...</string>
+    <string name="login_status_creating_account">Создаётся аккаунт...</string>
+    <string name="login_status_error">Ошибка авторизации</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Пароль</string>
+
+    <string name="sign_in">Войти</string>
+    <string name="create_account">Создать аккаунт</string>
+    <string name="login_success">Вход выполнен</string>
+    <string name="account_created">Аккаунт создан</string>
+    <string name="auth_failed">Ошибка авторизации</string>
+
+    <string name="error_empty_email">Введите email</string>
+    <string name="error_empty_password">Введите пароль</string>
+    <string name="error_short_password">Пароль должен быть не короче 6 символов</string>
+
+    <string name="action_logout">Выйти из аккаунта</string>
+
+    <string name="network_title">Сетевой ресурс</string>
+    <string name="network_description">Загрузка текущей погоды из внешнего сетевого API</string>
+    <string name="network_button_load">Обновить данные</string>
+    <string name="network_status_waiting">Ожидание загрузки</string>
+    <string name="network_status_loading">Загружаем данные...</string>
+    <string name="network_status_success">Данные успешно загружены</string>
+    <string name="network_status_error">Ошибка загрузки данных</string>
 </resources>

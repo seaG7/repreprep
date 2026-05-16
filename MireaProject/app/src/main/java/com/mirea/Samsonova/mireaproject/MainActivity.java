@@ -1,7 +1,9 @@
 package com.mirea.Samsonova.mireaproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +15,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (FirebaseAuth.getInstance().getCurrentUser() == null) {
+            openLoginScreen();
+            return;
+        }
+
         setContentView(R.layout.activity_main);
 
         toolbar = findViewById(R.id.toolbar);
@@ -47,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
                 R.id.nav_home,
                 R.id.nav_data,
                 R.id.nav_webview,
+                R.id.nav_network,
+                R.id.nav_worker,
                 R.id.nav_sensor,
                 R.id.nav_camera,
                 R.id.nav_audio,
@@ -64,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 R.string.navigation_drawer_open,
                 R.string.navigation_drawer_close
         );
+
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
     }
@@ -75,8 +87,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_logout) {
+            FirebaseAuth.getInstance().signOut();
+            openLoginScreen();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
     public boolean onSupportNavigateUp() {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    private void openLoginScreen() {
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
     }
 }

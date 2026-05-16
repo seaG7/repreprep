@@ -24,9 +24,15 @@
         tools:layout="@layout/fragment_web_view" />
 
     <fragment
+        android:id="@+id/nav_network"
+        android:name="com.mirea.Samsonova.mireaproject.ui.network.NetworkFragment"
+        android:label="@string/menu_network"
+        tools:layout="@layout/fragment_network" />
+
+    <fragment
         android:id="@+id/nav_worker"
         android:name="com.mirea.Samsonova.mireaproject.ui.worker.WorkerFragment"
-        android:label="Background Task"
+        android:label="@string/menu_worker"
         tools:layout="@layout/fragment_worker" />
 
     <fragment
