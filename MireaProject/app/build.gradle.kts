@@ -1,15 +1,11 @@
 plugins {
     alias(libs.plugins.android.application)
-    id("com.google.gms.google-services")
+    id("com.google.gms.google-services") version "4.4.4" apply false
 }
 
 android {
     namespace = "com.mirea.Samsonova.mireaproject"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.mirea.Samsonova.mireaproject"
@@ -38,7 +34,6 @@ android {
     buildFeatures {
         viewBinding = true
     }
-
 }
 
 dependencies {
